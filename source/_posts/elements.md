@@ -1,9 +1,12 @@
-title: Elements
-date: 2013-12-24 23:29:08
+title: Elements 文章测试
+date: 2018-7-24 23:32:06
+updated: 2018-7-24 23:32:06
 tags:
 ---
 
 The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don't forget to redefine the style by yourself.
+
+这篇文章包含了所有基本的内容，用来测试所有样式是否都能正常显示。
 
 ---
 

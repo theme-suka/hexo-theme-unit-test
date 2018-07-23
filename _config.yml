@@ -12,8 +12,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://theme.suka.moe
+root: /demo/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -38,9 +38,9 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: true
+  enable: false
+  line_number: false
+  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -63,7 +63,16 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: suka
+
+# Suka Theme config
+suka_theme:
+  search:
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    line_number: true
+    theme: default
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

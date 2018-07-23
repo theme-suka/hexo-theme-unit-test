@@ -3,3 +3,5 @@ tags:
 ---
 
 This post doesn't have a title. Make sure it's accessible.
+
+这篇文章没有标题，但是它依然能被访问。
