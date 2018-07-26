@@ -12,6 +12,9 @@
     "clean": "hexo clean"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-htmlmin": "^4.0.0",
     "hexo": "^3.7.1",
     "hexo-filter-auto-spacing": "^0.2.1",
     "hexo-generator-archive": "^0.1.5",
@@ -23,8 +26,6 @@
     "hexo-renderer-ejs": "^0.3.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.2",
-    "gulp-htmlclean": "^2.7.22",
-    "gulp-htmlmin": "^4.0.0"
+    "hexo-server": "^0.3.2"
   }
 }
