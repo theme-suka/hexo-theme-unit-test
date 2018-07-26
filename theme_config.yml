@@ -55,7 +55,7 @@ uiux:
   bg_color:
 
 img:
-  avatar: '/img/default_avatar.png'
+  avatar: 'https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/img/default_avatar.png'
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -209,8 +209,8 @@ vendors:
   # hexo-theme-suka
   # https://github.com/SukkaW/hexo-theme-suka
   suka:
-    style_css:
-    local_search_js:
+    style_css: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/css/style.min.css
+    local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/js/local-search.min.js
   # Spectre.css
   # https://picturepan2.github.io/spectre/
   # Version: 0.5.3
