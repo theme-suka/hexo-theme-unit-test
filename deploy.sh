@@ -1,4 +1,9 @@
 #!/bin/sh
+echo ''
+echo '-------------------------------------'
+echo 'Deploy to Demo...'
+echo '-------------------------------------'
+echo ''
 mkdir ./deploy-git
 cd ./deploy-git
 git init
