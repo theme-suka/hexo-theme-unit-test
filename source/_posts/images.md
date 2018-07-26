@@ -1,23 +1,23 @@
 title: Images
 date: 2013-12-26 22:46:49
 updated: 2013-12-26 22:46:49
-thumbnail: https://placehold.it/350x150.jpg
+thumbnail: https://i1.wp.com/placehold.it/1920x1080.jpg?h=150
 ---
 
 This is a image test post.
 
 这篇文章里有各种各样的图片
 
-![](/demo/assets/wallpaper-2572384.jpg)
+![](https://i1.wp.com/theme.suka.moe/demo/assets/wallpaper-2572384.jpg)
 
-![Caption](/demo/assets/wallpaper-2311325.jpg)
+![Caption](https://i1.wp.com/theme.suka.moe/demo/assets/wallpaper-2311325.jpg)
 
-![](/demo/assets/wallpaper-878514.jpg)
+![](https://i1.wp.com/theme.suka.moe/demo/assets/wallpaper-878514.jpg)
 
-![Small Picture](https://placehold.it/150.jpg)
+![Small Picture](https://i1.wp.com/placehold.it/150.jpg)
 
-![Small Picture](https://placehold.it/350x150.jpg)
+![Small Picture](https://i1.wp.com/placehold.it/350x150.jpg)
 
-![Small Picture](https://placehold.it/1024x768.jpg)
+![Big Picture](https://i1.wp.com/placehold.it/1024x768.jpg)
 
-![Small Picture](https://placehold.it/1920x1080.png)
+![Big Picture](https://i1.wp.com/placehold.it/1920x1080.png)

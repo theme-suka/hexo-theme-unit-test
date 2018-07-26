@@ -12,7 +12,7 @@
 head:
   # You should use a image/x-icon type icon and configure it here.
   favicon: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.1.0/source/img/suka-favicon.ico
-  high_res_favicon: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.1.0/source/img/suka-favicon.png
+  high_res_favicon: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png?w=24
   android_chrome_color:
   site_verification:
     google:
@@ -55,7 +55,7 @@ uiux:
   bg_color:
 
 img:
-  avatar: 'https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.2.0/source/img/default_avatar.png'
+  avatar: 'https://i1.wp.com/theme.suka.moe/demo/img/default_avatar.png?w=24'
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -228,7 +228,7 @@ vendors:
   lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.9.0
   # Busuanzi
   # https://busuanzi.ibruce.info
-  busuanzi:
+  busuanzi: https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js
 
 
 # ---------------------------------------------------------------
