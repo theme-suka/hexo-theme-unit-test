@@ -7,13 +7,44 @@
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
-# Put your favicons into `hexo-site/source/` directory.
-# To get or check favicons visit: https://realfavicongenerator.net
 head:
-  # You should use a image/x-icon type icon and configure it here.
-  favicon: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.1.0/source/img/suka-favicon.ico
-  high_res_favicon: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png?w=24
-  android_chrome_color:
+  # Favicon
+  #   Put your favicons into `hexo-site/source/` directory.
+  #   To get or check favicons visit: https://realfavicongenerator.net
+  favicon:
+    # You should use a image/x-icon type icon and configure it here.
+    ico: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@0.1.0/source/img/suka-favicon.ico
+    # 16x16 png
+    small: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png?w=16
+    # 32x32 png
+    medium: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png?w=32
+    apple_touch_icon: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png
+    # svg icon
+    safari_pinned_tab:
+  # Color
+  #   It will defined color below:
+  #     Android Chrome Color
+  #     Safari Pinned Tab
+  color:
+  # PWA
+  #   You can setup your blog as pwa with a manifest.
+  #   https://app-manifest.firebaseapp.com where you can generate a manifest quickly
+  #   Leave it blank if you don't have one
+  pwa_manifest:
+  # Microsoft Web App
+  #   Windows 8 and 10 users can pin your web site on their desktop.
+  #   Your site appears as a tile, just like a native Windows app.
+  #   Leave it blank if you don't have one
+  ms_browserconfig:
+  # Open search
+  #   Fill in your opensearch xml file here.
+  #   Leave it blank if you don't have one
+  open_search:
+  # Keywords
+  #   Define meta keywords tag
+  #   split with ','
+  keywords:
+  # Site Verification
   site_verification:
     google:
     baidu:
@@ -227,17 +258,6 @@ vendors:
   # Busuanzi
   # https://busuanzi.ibruce.info
   busuanzi: https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js
-
-# PWA
-#   You can setup your blog as pwa with a manifest.
-#   https://app-manifest.firebaseapp.com where you can generate a manifest quickly
-#   Leave it blank if you don't have one
-pwa_manifest:
-
-# Open search
-#   Fill in your opensearch xml file here.
-#   Leave it blank if you don't have one
-open_search:
 
 # Theme Version
 #   localStorage cache version
