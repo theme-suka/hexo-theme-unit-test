@@ -1,2 +1,7 @@
-footer:
-  '<!-- Custom Code Here -->'
+custom_footer_1: '<!-- Single Custom Code -->'
+custom_footer_2:
+  - '<!-- Muilt line Custom Code -->'
+  - '<!-- Line 1 -->'
+  - '<!-- Line 2 -->'
+custom_footer_3:
+  - '<!-- Single line Custom Code Config with Array -->'
