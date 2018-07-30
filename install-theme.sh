@@ -1,11 +1,11 @@
 #!/bin/sh
 echo ''
 echo '-------------------------------------'
-echo 'Install Suka Theme...'
+echo 'Install Sukka Theme...'
 echo '-------------------------------------'
 echo ''
-git clone https://github.com/SukkaW/hexo-theme-suka.git themes/suka
-cd themes/suka
+git clone https://github.com/SukkaW/hexo-theme-sukka.git themes/sukka
+cd themes/sukka
 git checkout -t origin/canary
 git pull
 rm -rf .git
