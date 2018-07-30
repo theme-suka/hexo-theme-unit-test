@@ -1,0 +1,19 @@
+"Sukka's Blog":
+    url: https://blog.suka.moe
+    img: https://gravatar.loli.net/avatar/979869bac8c7bd23fbd649064eabd48e?s=128
+    text: "苏卡卡的有底洞"
+    
+"Suka Theme":
+    url: https://theme.suka.moe
+    img: https://i1.wp.com/theme.suka.moe/docs/assets/img/hexo-theme-suka.png
+    text: "Suka Theme"
+
+"Suka Theme GitHub":
+    url: https://github.com/SukkaW/hexo-theme-suka
+    img: https://i1.wp.com/github.com/fluidicon.png
+    text: "Suka Theme"
+
+"Suka Theme Docs":
+    url: https://theme.suka.moe/docs/
+    img: https://i1.wp.com/theme.suka.moe/docs/assets/img/hexo-theme-suka.png
+    text: "Documents of Suka Theme"
