@@ -8,8 +8,9 @@
   "scripts": {
     "generate": "hexo g",
     "deploy": "hexo d",
+    "build": "hexo g && gulp",
     "server": "hexo s",
-    "clean": "hexo clean"
+    "clean": "hexo clean --silent"
   },
   "dependencies": {
     "gulp": "^4.0.0",
