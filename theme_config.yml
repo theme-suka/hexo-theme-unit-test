@@ -18,7 +18,10 @@ head:
     small: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png?w=16
     # 32x32 png
     medium: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png?w=32
-    apple_touch_icon: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png
+    # 180x180 png
+    apple_touch_icon: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png?w=180
+    # 192x192 png
+    large: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png?w=192
     # svg icon
     safari_pinned_tab:
   # Color
@@ -262,6 +265,41 @@ search:
   # Swiftype
   swiftype_key:
 
+# Code highlight
+# You can only enable one of them to avoid issues.
+# Also you need to disable all highlight option in hexo's site config.
+#   highlight:
+#     enable: false
+#     line_number: false
+#     auto_detect: false
+#     tab_replace: false
+#
+# Suka Theme has built in those code highlight: Prism | Hanabi | Prettify
+# Run `hexo clean` first after changing code highlight configuration.
+
+# Hanabi (https://github.com/egoist/hanabi)
+hanabi:
+  enable: false
+
+# Prism
+# Disable other code hightlight first and enable prism at site config:
+#    suka_theme:
+#      ...
+#      prism:
+#        enable: true
+
+# Google Code Prettify
+prettify:
+  enable: enable
+  linenumber: true # We prefer to enable for avoiding some pretiffy's bugs.
+  # Prettify Theme
+  theme: github-v2 # It will not load any theme if you leave it blank
+  # You can only enable the Suka built in prettify theme here. Check the /source/lib/prettify/themes directories.
+  # The theme name is the css file name without `.min.css`, as [theme-name].min.css
+  #
+  # If you want to use other theme, you can leave that blank, and load your own theme by adding <link> tag using custom code.
+  # Learn how to use custom code here: https://theme.suka.moe/docs/en/expert/#Add-custom-code
+
 # ---------------------------------------------------------------
 # Expert Settings
 # ---------------------------------------------------------------
@@ -297,6 +335,17 @@ vendors:
   # Busuanzi
   # https://busuanzi.ibruce.info
   busuanzi: https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js
+  # Hanabi
+  # https://github.com/egoist/hanabi
+  hanabi: https://cdn.jsdelivr.net/npm/hanabi@0.4.0/dist/hanabi.min.js
+  # Prettify Core
+  # Attention! It is NOT the `run_prettify.js`!
+  # Version: 0.1.0
+  prettify:
+  # Prettify Theme
+  # You can fill in any prettify theme you want here, and it will also override the prettify theme config below.
+  # Personally I prefer the theme here: https://github.com/jmblog/color-themes-for-google-code-prettify
+  prettify_theme: https://cdn.jsdelivr.net/npm/color-themes-for-google-code-prettify@2.0.4/dist/themes/github-v2.min.css
 
 # Theme Version
 #   localStorage cache version
