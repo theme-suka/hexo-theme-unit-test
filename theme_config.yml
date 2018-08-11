@@ -290,7 +290,7 @@ hanabi:
 
 # Google Code Prettify
 prettify:
-  enable: enable
+  enable: true
   linenumber: true # We prefer to enable for avoiding some pretiffy's bugs.
   # Prettify Theme
   theme: github-v2 # It will not load any theme if you leave it blank
@@ -341,7 +341,7 @@ vendors:
   # Prettify Core
   # Attention! It is NOT the `run_prettify.js`!
   # Version: 0.1.0
-  prettify:
+  prettify: https://cdn.jsdelivr.net/npm/code-prettify@0.1.0/src/prettify.min.js
   # Prettify Theme
   # You can fill in any prettify theme you want here, and it will also override the prettify theme config below.
   # Personally I prefer the theme here: https://github.com/jmblog/color-themes-for-google-code-prettify
