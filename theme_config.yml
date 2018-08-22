@@ -334,7 +334,7 @@ vendors:
   lazyload: https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.9.0
   # Busuanzi
   # https://busuanzi.ibruce.info
-  busuanzi: https://cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js
+  busuanzi: https://cdn.jsdelivr.net/npm/busuanzi@2.3.0
   # Hanabi
   # https://github.com/egoist/hanabi
   hanabi: https://cdn.jsdelivr.net/npm/hanabi@0.4.0/dist/hanabi.min.js
