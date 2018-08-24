@@ -41,7 +41,7 @@ highlight:
   enable: false
   line_number: false
   auto_detect: false
-  tab_replace: false
+  tab_replace: true
 
 # Category & Tag
 default_category: uncategorized
@@ -72,9 +72,9 @@ suka_theme:
     path: search.json
     field: post # Page | Post | All. Default post
   prism:
-    enable: false
+    enable: true
     line_number: true
-    theme: default
+    theme: ghcolors
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
