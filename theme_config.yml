@@ -105,6 +105,8 @@ nav:
       link: /demo/page/
     Links:
       link: /demo/links/
+    Gallery:
+      link: /demo/gallery/
 
 # SNS Share Switch
 # Used to choose which items will be displayed in share menu.
