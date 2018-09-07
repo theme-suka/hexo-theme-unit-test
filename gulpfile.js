@@ -9,8 +9,15 @@ gulp.task('minify-html', function() {
             minifyJS: true,
             minifyCSS: true,
             collapseWhitespace: true,
+            sortAttributes: true,
+            sortClassName: true,
+            processScripts: ["application/ld+json"]
         }))
-        .pipe(htmlclean())
+        .pipe(htmlclean({
+            unprotect: [
+                /<script [^>]*\btype="application\/ld\+json"[\s\S]+?<\/script>/ig,
+            ]
+        }))
         .pipe(gulp.dest('./public'))
 });
 
