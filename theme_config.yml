@@ -292,7 +292,7 @@ hanabi:
 
 # Google Code Prettify
 prettify:
-  enable: true
+  enable: false
   linenumber: true # We prefer to enable for avoiding some pretiffy's bugs.
   # Prettify Theme
   theme: github-v2 # It will not load any theme if you leave it blank

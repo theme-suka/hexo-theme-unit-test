@@ -38,9 +38,9 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
-  line_number: false
-  auto_detect: false
+  enable: true
+  line_number: true
+  auto_detect: true
   tab_replace: true
 
 # Category & Tag
@@ -72,7 +72,7 @@ suka_theme:
     path: search.json
     field: post # Page | Post | All. Default post
   prism:
-    enable: true
+    enable: false
     line_number: true
     theme: ghcolors
 
