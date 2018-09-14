@@ -1,11 +1,16 @@
+"Sukka":
+    url: https://skk.moe
+    img: https://gravatar.loli.net/avatar/979869bac8c7bd23fbd649064eabd48e?s=128
+    text: "童话只美在真实却从不续写"
+
 "Sukka's Blog":
-    url: https://blog.suka.moe
+    url: https://blog.skk.moe
     img: https://gravatar.loli.net/avatar/979869bac8c7bd23fbd649064eabd48e?s=128
     text: "苏卡卡的有底洞"
     
 "Suka Theme":
-    url: https://theme.suka.moe
-    img: https://i1.wp.com/theme.suka.moe/docs/assets/img/hexo-theme-suka.png
+    url: https://theme-suka.github.io
+    img: https://i1.wp.com/theme-suka.github.io/docs/assets/img/hexo-theme-suka.png
     text: "Suka Theme"
 
 "Suka Theme GitHub":
@@ -14,6 +19,6 @@
     text: "Suka Theme"
 
 "Suka Theme Docs":
-    url: https://theme.suka.moe/docs/
-    img: https://i1.wp.com/theme.suka.moe/docs/assets/img/hexo-theme-suka.png
+    url: https://theme-suka.github.io/docs/
+    img: https://i1.wp.com/theme-suka.github.io/docs/assets/img/hexo-theme-suka.png
     text: "Documents of Suka Theme"

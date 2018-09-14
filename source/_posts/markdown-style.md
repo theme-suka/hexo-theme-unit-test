@@ -125,23 +125,23 @@ Some text to show that the reference links can follow later.
 hover to see the title text:
 
 Inline-style:
-![alt text](https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png "Logo Title Text 1")
+![alt text](https://i1.wp.com/theme-suka.github.io/demo/img/suka-favicon.png "Logo Title Text 1")
 
 Reference-style:
 ![alt text][logo]
 
-[logo]: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png "Logo Title Text 2"
+[logo]: https://i1.wp.com/theme-suka.github.io/demo/img/suka-favicon.png "Logo Title Text 2"
 ```
 
 hover to see the title text:
 
 Inline-style:
-![alt text](https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png "Logo Title Text 1")
+![alt text](https://i1.wp.com/theme-suka.github.io/demo/img/suka-favicon.png "Logo Title Text 1")
 
 Reference-style:
 ![alt text][logo]
 
-[logo]: https://i1.wp.com/theme.suka.moe/demo/img/suka-favicon.png "Logo Title Text 2"
+[logo]: https://i1.wp.com/theme-suka.github.io/demo/img/suka-favicon.png "Logo Title Text 2"
 
 
 # Code and Syntax Highlighting
