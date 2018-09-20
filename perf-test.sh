@@ -6,7 +6,7 @@ echo 'Importing 5000 posts ...'
 echo '-------------------------------------'
 echo ''
 cd source/_posts/
-git clone https://github.com/SukkaLab/hexo-5000-posts.git
+git clone https://github.com/SukkaLab/hexo-5000-posts.git --depth=1
 cd ..
 cd ..
 # Disable fragment cache
