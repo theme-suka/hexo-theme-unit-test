@@ -1,8 +1,8 @@
 #!/bin/sh
-# Import 5000 Posts
+# Import 300 Posts
 echo ''
 echo '-------------------------------------'
-echo 'Importing 5000 posts ...'
+echo 'Importing 300 posts ...'
 echo '-------------------------------------'
 echo ''
 cd source/_posts/
@@ -12,7 +12,7 @@ cd ..
 # Disable fragment cache
 echo ''
 echo '-------------------------------------'
-echo 'Test performance: 5000 posts without fragment_cache'
+echo 'Test performance: 300 posts without fragment_cache'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
@@ -22,7 +22,7 @@ cat perf.log | grep 'generated in'
 # Enable fragment cache
 echo ''
 echo '-------------------------------------'
-echo 'Test performance: 5000 posts without fragment_cache'
+echo 'Test performance: 300 posts without fragment_cache'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
