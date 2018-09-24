@@ -22,7 +22,7 @@ cat perf.log | grep 'generated in'
 # Enable fragment cache
 echo ''
 echo '-------------------------------------'
-echo 'Test performance: 300 posts without fragment_cache'
+echo 'Test performance: 300 posts with fragment_cache'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
