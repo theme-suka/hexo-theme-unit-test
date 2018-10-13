@@ -16,6 +16,7 @@
     "reviewers": [
         "SukkaW"
     ],
+    "renovateFork": true,
     "commitMessageAction": "update",
     "semanticCommits": true,
     "semanticCommitType": "chore"
