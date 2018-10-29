@@ -7,6 +7,6 @@ echo ''
 mkdir -p ./themes/suka
 cp -rf ../hexo-theme-suka/* ./themes/suka/
 cd ./themes/suka
-npm i --production > /dev/null
+yarn install --production > /dev/null
 cd ..
 cd ..
