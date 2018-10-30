@@ -11,9 +11,15 @@ cd ..
 cd ..
 
 # Disable fragment cache
+echo '-------------------------------------'
+echo 'Test performance'
+echo '-------------------------------------'
 echo ''
 echo '-------------------------------------'
-echo 'Test performance: 300 posts without fragment_cache'
+echo ' * fragment_fache: off'
+echo ' * hexo built in highlight.js: on'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: on'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
@@ -24,7 +30,10 @@ cat perf.log | grep 'generated in'
 # Enable fragment cache
 echo ''
 echo '-------------------------------------'
-echo 'Test performance: 300 posts with fragment_cache'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: on'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: on'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
@@ -35,7 +44,10 @@ cat perf.log | grep 'generated in'
 # Disable Hexo Highlight.js
 echo ''
 echo '-------------------------------------'
-echo 'Test performance: 300 posts with fragment_cache enabled and highlight.js disabled'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: on'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
@@ -50,3 +62,46 @@ highlight:
 
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
+
+# Enable prism highlight
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: on'
+echo ' * suka theme local-search: on'
+echo '-------------------------------------'
+echo ''
+sed -i '64,72d' _config.yml
+
+echo '
+suka_theme:
+  search:
+    enable: true
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    enable: true
+    line_number: true
+    theme: ghcolors' >> _config.yml
+
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: off'
+echo '-------------------------------------'
+echo ''
+sed -i '75,83d' _config.yml
+
+echo '
+suka_theme:
+  search:
+    enable: false
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    enable: false
+    line_number: true
+    theme: ghcolors' >> _config.yml
