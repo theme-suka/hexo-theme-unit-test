@@ -51,7 +51,6 @@ echo ' * suka theme local-search: on'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
-
 sed -i '40,44d' _config.yml
 echo '
 highlight:
@@ -72,6 +71,7 @@ echo ' * suka theme prism highlight: on'
 echo ' * suka theme local-search: on'
 echo '-------------------------------------'
 echo ''
+npm run clean > /dev/null
 sed -i '64,72d' _config.yml
 
 echo '
@@ -85,6 +85,9 @@ suka_theme:
     line_number: true
     theme: ghcolors' >> _config.yml
 
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
+
 echo ''
 echo '-------------------------------------'
 echo ' * fragment_fache: on'
@@ -93,6 +96,8 @@ echo ' * suka theme prism highlight: off'
 echo ' * suka theme local-search: off'
 echo '-------------------------------------'
 echo ''
+npm run clean > /dev/null
+
 sed -i '75,83d' _config.yml
 
 echo '
@@ -105,3 +110,6 @@ suka_theme:
     enable: false
     line_number: true
     theme: ghcolors' >> _config.yml
+
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
