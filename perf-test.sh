@@ -98,7 +98,7 @@ echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
 
-sed -i '75,83d' _config.yml
+sed -i '75,84d' _config.yml
 
 echo '
 suka_theme:
