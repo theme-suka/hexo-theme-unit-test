@@ -68,7 +68,7 @@ echo '-------------------------------------'
 echo ' * fragment_fache: on'
 echo ' * hexo built in highlight.js: off'
 echo ' * suka theme prism highlight: on'
-echo ' * suka theme local-search: on'
+echo ' * suka theme local-search: off'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
@@ -77,7 +77,7 @@ sed -i '64,72d' _config.yml
 echo '
 suka_theme:
   search:
-    enable: true
+    enable: false
     path: search.json
     field: post # Page | Post | All. Default post
   prism:
