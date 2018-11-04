@@ -191,4 +191,30 @@ feed:
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
 
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: off'
+echo ''
+echo ' * Extra plugin: hexo-filter-nofollow'
+echo '-------------------------------------'
+echo ''
+npm run clean > /dev/null
+
 npm uninstall hexo-generator-feed --save
+npm i hexo-filter-nofollow --save
+
+echo '
+nofollow:
+  enable: true
+  exclude:
+    - skk.moe
+    - blog.skk.moe
+    - theme-suka.skk.moe' >> _config.yml
+
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
+
+npm uninstall hexo-filter-nofollow --save
