@@ -20,5 +20,4 @@ script:
 cache:
   directories:
   - node_modules
-  - themes/suka/node_modules
   timeout: 60
