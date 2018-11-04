@@ -7,8 +7,7 @@ echo '-------------------------------------'
 echo ''
 cd source/_posts/
 git clone https://github.com/SukkaLab/hexo-5000-posts.git --depth=1
-cd ..
-cd ..
+cd ../..
 
 # Disable fragment cache
 echo '-------------------------------------'
