@@ -113,3 +113,84 @@ suka_theme:
 
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
+
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: off'
+echo ''
+echo ' * Extra plugin: hexo-filter-auto-spacing'
+echo '-------------------------------------'
+echo ''
+npm run clean > /dev/null
+
+npm i hexo-filter-auto-spacing --save
+
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
+
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: off'
+echo ''
+echo ' * Extra plugin: hexo-filter-auto-spacing'
+echo '-------------------------------------'
+echo ''
+npm run clean > /dev/null
+
+npm i hexo-filter-auto-spacing --save
+
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
+
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: off'
+echo ''
+echo ' * Extra plugin: hexo-generator-better-sitemap'
+echo '-------------------------------------'
+echo ''
+npm run clean > /dev/null
+
+npm uninstall hexo-filter-auto-spacing --save
+npm i hexo-generator-better-sitemap --save
+
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
+
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: off'
+echo ''
+echo ' * Extra plugin: hexo-generator-feed'
+echo '-------------------------------------'
+echo ''
+npm run clean > /dev/null
+
+npm uninstall hexo-generator-better-sitemap --save
+npm i hexo-generator-feed --save
+
+echo '
+# RSS
+feed:
+  type: atom
+  path: atom.xml
+  limit: 100
+  hub:' >> _config.yml
+
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
+
+
+npm uninstall hexo-generator-feed --save
