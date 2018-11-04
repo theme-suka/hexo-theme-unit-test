@@ -125,7 +125,7 @@ echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
 
-npm i hexo-filter-auto-spacing --save
+npm i hexo-filter-auto-spacing --save > /dev/null
 
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
@@ -142,7 +142,7 @@ echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
 
-npm i hexo-filter-auto-spacing --save
+npm i hexo-filter-auto-spacing --save > /dev/null
 
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
@@ -159,8 +159,8 @@ echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
 
-npm uninstall hexo-filter-auto-spacing --save
-npm i hexo-generator-better-sitemap --save
+npm uninstall hexo-filter-auto-spacing --save > /dev/null
+npm i hexo-generator-better-sitemap --save > /dev/null
 
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
@@ -177,8 +177,8 @@ echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
 
-npm uninstall hexo-generator-better-sitemap --save
-npm i hexo-generator-feed --save
+npm uninstall hexo-generator-better-sitemap --save > /dev/null
+npm i hexo-generator-feed --save > /dev/null
 
 echo '
 # RSS
@@ -203,8 +203,8 @@ echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
 
-npm uninstall hexo-generator-feed --save
-npm i hexo-filter-nofollow --save
+npm uninstall hexo-generator-feed --save > /dev/null
+npm i hexo-filter-nofollow --save > /dev/null
 
 echo '
 nofollow:
@@ -217,4 +217,4 @@ nofollow:
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
 
-npm uninstall hexo-filter-nofollow --save
+npm uninstall hexo-filter-nofollow --save > /dev/null
