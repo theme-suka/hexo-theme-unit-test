@@ -191,5 +191,4 @@ feed:
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
 
-
 npm uninstall hexo-generator-feed --save

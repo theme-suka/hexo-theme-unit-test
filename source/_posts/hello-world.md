@@ -1,6 +1,6 @@
 title: Hello World
 date: 2013-12-24 17:49:32
-update: 2013-12-24 17:49:32
+updated: 2013-12-24 17:49:32
 tags:
 - Foo
 - Bar
