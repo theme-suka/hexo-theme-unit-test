@@ -16,9 +16,9 @@ echo 'Run clean up ...'
 echo '-------------------------------------'
 echo ''
 
-rm -rf themes/sukasource/css/highlight
-rm -rf themes/sukasource/lib/prettify/themes
-rm -rf themes/sukasource/lib/prism
+rm -rf themes/suka/source/css/highlight
+rm -rf themes/suka/source/lib/prettify/themes
+rm -rf themes/suka/source/lib/prism
 rm -rf source/assets
 
 # Disable fragment cache
