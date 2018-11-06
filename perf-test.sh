@@ -6,14 +6,27 @@ echo 'Importing 300 posts ...'
 echo '-------------------------------------'
 echo ''
 cd source/_posts/
-git clone https://github.com/SukkaLab/hexo-5000-posts.git --depth=1
+git clone https://github.com/SukkaLab/hexo-5000-posts.git --depth=1 --quiet
 cd ../..
+
+# Run Clean up
+echo ''
+echo '-------------------------------------'
+echo 'Run clean up ...'
+echo '-------------------------------------'
+echo ''
+
+rm -rf themes/sukasource/css/highlight
+rm -rf themes/sukasource/lib/prettify/themes
+rm -rf themes/sukasource/lib/prism
+rm -rf source/assets
 
 # Disable fragment cache
 echo '-------------------------------------'
 echo 'Test performance'
 echo '-------------------------------------'
 echo ''
+
 echo '-------------------------------------'
 echo ' * fragment_fache: off'
 echo ' * hexo built in highlight.js: on'
