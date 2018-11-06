@@ -43,20 +43,59 @@ cat perf.log | grep 'generated in'
 echo ''
 echo '-------------------------------------'
 echo ' * fragment_fache: on'
-echo ' * hexo built in highlight.js: off'
+echo ' * hexo built in highlight.js: on'
 echo ' * suka theme prism highlight: off'
 echo ' * suka theme local-search: on'
-echo ' * Extra config: disable highlight line_number and tab_replace'
+echo ' * Extra config: disable highlight line_number'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
-sed -i '40,44d' _config.yml
-echo '
-highlight:
+sed -i '62,77d' _config.yml
+echo 'highlight:
   enable: true
   line_number: false
   auto_detect: false
-  tab_replace: false' >> _config.yml
+  tab_replace: true
+
+suka_theme:
+  search:
+    enable: true
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    enable: false
+    line_number: true
+    theme: ghcolors' >> _config.yml
+
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
+
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: on'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: on'
+echo ' * Extra config: disable highlight tab_replace'
+echo '-------------------------------------'
+echo ''
+npm run clean > /dev/null
+sed -i '62,77d' _config.yml
+echo 'highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: false
+
+suka_theme:
+  search:
+    enable: true
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    enable: false
+    line_number: true
+    theme: ghcolors' >> _config.yml
 
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
@@ -71,13 +110,22 @@ echo ' * suka theme local-search: on'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
-sed -i '79,84d' _config.yml
-echo '
-highlight:
+sed -i '62,77d' _config.yml
+echo 'highlight:
   enable: false
   line_number: false
   auto_detect: false
-  tab_replace: false' >> _config.yml
+  tab_replace: false
+
+suka_theme:
+  search:
+    enable: true
+    path: search.json
+    field: post # Page | Post | All. Default post
+  prism:
+    enable: false
+    line_number: true
+    theme: ghcolors' >> _config.yml
 
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
@@ -92,12 +140,16 @@ echo ' * suka theme local-search: off'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
-sed -i '64,72d' _config.yml
+sed -i '62,77d' _config.yml
+echo 'highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: false
 
-echo '
 suka_theme:
   search:
-    enable: false
+    enable: true
     path: search.json
     field: post # Page | Post | All. Default post
   prism:
@@ -117,10 +169,13 @@ echo ' * suka theme local-search: off'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
+sed -i '62,77d' _config.yml
+echo 'highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: false
 
-sed -i '76,85d' _config.yml
-
-echo '
 suka_theme:
   search:
     enable: false
@@ -130,23 +185,6 @@ suka_theme:
     enable: false
     line_number: true
     theme: ghcolors' >> _config.yml
-
-npm run generate > perf.log
-cat perf.log | grep 'generated in'
-
-echo ''
-echo '-------------------------------------'
-echo ' * fragment_fache: on'
-echo ' * hexo built in highlight.js: off'
-echo ' * suka theme prism highlight: off'
-echo ' * suka theme local-search: off'
-echo ''
-echo ' * Extra plugin: hexo-filter-auto-spacing'
-echo '-------------------------------------'
-echo ''
-npm run clean > /dev/null
-
-npm i hexo-filter-auto-spacing --save > /dev/null
 
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
