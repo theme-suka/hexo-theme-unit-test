@@ -37,11 +37,6 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: true
 
 # Category & Tag
 default_category: uncategorized
@@ -65,7 +60,12 @@ pagination_dir: page
 ## Themes: http://hexo.io/themes/
 theme: suka
 
-# Suka Theme config
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: true
+
 suka_theme:
   search:
     enable: true
@@ -76,7 +76,3 @@ suka_theme:
     line_number: true
     theme: ghcolors
 
-# Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type:
