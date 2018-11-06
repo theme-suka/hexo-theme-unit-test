@@ -40,6 +40,27 @@ sed -i "s|fragment_cache: false|fragment_cache: true|g" themes/suka/_config.yml
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
 
+echo ''
+echo '-------------------------------------'
+echo ' * fragment_fache: on'
+echo ' * hexo built in highlight.js: off'
+echo ' * suka theme prism highlight: off'
+echo ' * suka theme local-search: on'
+echo ' * Extra config: disable highlight line_number and tab_replace'
+echo '-------------------------------------'
+echo ''
+npm run clean > /dev/null
+sed -i '40,44d' _config.yml
+echo '
+highlight:
+  enable: true
+  line_number: false
+  auto_detect: false
+  tab_replace: false' >> _config.yml
+
+npm run generate > perf.log
+cat perf.log | grep 'generated in'
+
 # Disable Hexo Highlight.js
 echo ''
 echo '-------------------------------------'
@@ -50,7 +71,7 @@ echo ' * suka theme local-search: on'
 echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
-sed -i '40,44d' _config.yml
+sed -i '79,84d' _config.yml
 echo '
 highlight:
   enable: false
@@ -97,7 +118,7 @@ echo '-------------------------------------'
 echo ''
 npm run clean > /dev/null
 
-sed -i '75,84d' _config.yml
+sed -i '76,85d' _config.yml
 
 echo '
 suka_theme:
