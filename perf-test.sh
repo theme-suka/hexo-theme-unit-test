@@ -2,7 +2,7 @@
 # Import 300 Posts
 echo '-------------------------------------'
 echo -n '
-* Import 300 posts'
+* Import 300 posts ... '
 
 cd source/_posts/
 git clone https://github.com/SukkaLab/hexo-5000-posts.git --depth=1 --quiet
@@ -12,7 +12,7 @@ echo -n 'Done!'
 
 # Run Clean up
 echo -n '
-* Run clean up ...'
+* Run clean up ... '
 
 rm -rf themes/suka/source/css/highlight
 rm -rf themes/suka/source/lib/prettify/themes
@@ -23,7 +23,7 @@ echo -n 'Done!
 '
 
 # Disable fragment cache
-echo '* Test performance...'
+echo '* Test performance ... '
 echo ''
 
 echo '-------------------------------------'
