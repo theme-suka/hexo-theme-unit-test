@@ -1,7 +1,7 @@
 #!/bin/sh
 # Import 300 Posts
-echo '-------------------------------------'
 echo -n '
+-------------------------------------
 * Import 300 posts ... '
 
 cd source/_posts/
@@ -24,9 +24,9 @@ echo -n 'Done!
 
 # Disable fragment cache
 echo '* Test performance ... '
-echo ''
 
 echo '-------------------------------------'
+echo '               Round A'
 echo ' - fragment_fache: off'
 echo ' - hexo built in highlight.js: on'
 echo ' - suka theme prism highlight: off'
@@ -40,6 +40,7 @@ cat perf.log | grep 'generated in'
 # Enable fragment cache
 echo ''
 echo '-------------------------------------'
+echo '               Round B'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: on'
 echo ' - suka theme prism highlight: off'
@@ -52,6 +53,7 @@ cat perf.log | grep 'generated in'
 
 echo ''
 echo '-------------------------------------'
+echo '               Round C'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: on'
 echo ' - suka theme prism highlight: off'
@@ -81,6 +83,7 @@ cat perf.log | grep 'generated in'
 
 echo ''
 echo '-------------------------------------'
+echo '               Round D'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: on'
 echo ' - suka theme prism highlight: off'
@@ -111,6 +114,7 @@ cat perf.log | grep 'generated in'
 # Disable Hexo Highlight.js
 echo ''
 echo '-------------------------------------'
+echo '               Round E'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: off'
 echo ' - suka theme prism highlight: off'
@@ -140,6 +144,7 @@ cat perf.log | grep 'generated in'
 # Enable prism highlight
 echo ''
 echo '-------------------------------------'
+echo '               Round F'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: off'
 echo ' - suka theme prism highlight: on'
@@ -168,6 +173,7 @@ cat perf.log | grep 'generated in'
 
 echo ''
 echo '-------------------------------------'
+echo '               Round G'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: off'
 echo ' - suka theme prism highlight: off'
@@ -196,6 +202,7 @@ cat perf.log | grep 'generated in'
 
 echo ''
 echo '-------------------------------------'
+echo '               Round H1'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: off'
 echo ' - suka theme prism highlight: off'
@@ -207,11 +214,14 @@ npm run clean > /dev/null
 
 npm i hexo-filter-auto-spacing --save &>/dev/null
 
+echo '-------------------------------------'
+
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
 
 echo ''
 echo '-------------------------------------'
+echo '               Round H2'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: off'
 echo ' - suka theme prism highlight: off'
@@ -224,11 +234,14 @@ npm run clean > /dev/null
 npm uninstall hexo-filter-auto-spacing --save &>/dev/null
 npm i hexo-generator-better-sitemap --save &>/dev/null
 
+echo '-------------------------------------'
+
 npm run generate > perf.log
 cat perf.log | grep 'generated in'
 
 echo ''
 echo '-------------------------------------'
+echo '               Round H3'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: off'
 echo ' - suka theme prism highlight: off'
@@ -241,6 +254,8 @@ npm run clean > /dev/null
 
 npm uninstall hexo-generator-better-sitemap --save &>/dev/null
 npm i hexo-generator-feed --save &>/dev/null
+
+echo '-------------------------------------'
 
 echo '
 # RSS
@@ -255,6 +270,7 @@ cat perf.log | grep 'generated in'
 
 echo ''
 echo '-------------------------------------'
+echo '               Round H4'
 echo ' - fragment_fache: on'
 echo ' - hexo built in highlight.js: off'
 echo ' - suka theme prism highlight: off'
@@ -267,6 +283,8 @@ npm run clean > /dev/null
 
 npm uninstall hexo-generator-feed --save &>/dev/null
 npm i hexo-nofollow --save &>/dev/null
+
+echo '-------------------------------------'
 
 echo '
 nofollow:
