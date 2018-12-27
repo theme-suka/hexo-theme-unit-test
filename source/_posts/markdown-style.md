@@ -55,6 +55,12 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
+- Paragraph In unordered list
+
+  For example like this.
+
+Common Paragraph with some text.
+And more text.
 ```
 
 1. First ordered list item
@@ -73,6 +79,12 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 * Unordered list can use asterisks
 - Or minuses
 + Or pluses
+- Paragraph In unordered list
+
+  For example like this.
+
+Common Paragraph with some text.
+And more text.
 
 # Inline HTML
 
