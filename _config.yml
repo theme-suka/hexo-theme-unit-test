@@ -75,4 +75,6 @@ suka_theme:
     enable: false
     line_number: true
     theme: ghcolors
-
+  lazyload:
+    enable: true
+    suka_theme: true

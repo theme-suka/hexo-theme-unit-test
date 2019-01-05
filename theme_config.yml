@@ -324,6 +324,7 @@ vendors:
   suka:
     style_css: 
     local_search_js: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/js/local-search.min.js
+    lazyload_img: 'data:image/gif;base64,R0lGODlhAQABAID/AP///wAAACwAAAAAAQABAAACAkQBADs='
     hanabi_browser_js:
     highlight_theme: https://cdn.jsdelivr.net/gh/sukkaw/hexo-theme-suka@1.2.0/source/css/highlight/github.min.css
     gallery_css:
